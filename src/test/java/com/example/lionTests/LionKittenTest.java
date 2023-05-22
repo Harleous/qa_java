@@ -1,10 +1,13 @@
 package com.example.lionTests;
 
 
+import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.junit.Assert.assertEquals;
 
+@RunWith(MockitoJUnitRunner.class)
 public class LionKittenTest  {
 @Mock
 com.example.Feline feline;

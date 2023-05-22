@@ -2,12 +2,10 @@ package com.example.felineTests;
 
 @org.junit.runner.RunWith(org.mockito.junit.MockitoJUnitRunner.class)
 public class FelineTest {
-@org.mockito.Mock
-    com.example.Animal animal;
+
     @org.junit.Test
     public void eatMeatTest() throws Exception {
         com.example.Feline feline = new com.example.Feline();
-        org.mockito.Mockito.when(animal.getFood("Хищник")).thenReturn(java.util.List.of("Животные", "Птицы", "Рыба"));
         org.junit.Assert.assertEquals(java.util.List.of("Животные", "Птицы", "Рыба"),feline.eatMeat());
     }
 
